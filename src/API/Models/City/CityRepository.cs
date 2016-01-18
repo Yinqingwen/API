@@ -45,7 +45,7 @@ namespace API.Models
 
         public City Find(long id)
         {
-            City city = apicontext.Citys.Where(b => b.ID == id).First();
+            City city = apicontext.Citys.Where(b => b.ID == id).Where(b => b.InUse == true).FirstOrDefault();
             return city;
         }
 
