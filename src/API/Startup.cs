@@ -7,6 +7,8 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Data.Entity;
+using API.Models;
 
 namespace API
 {
@@ -33,6 +35,11 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container
         public void ConfigureServices(IServiceCollection services)
         {
+            var connection = @"Server=tcp:ar8upiuxoe.database.chinacloudapi.cn,1433;Database=LIMS;User ID=Yinqingwen@ar8upiuxoe;Password=Panda19690219;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;";
+
+            services.AddEntityFramework()
+                .AddSqlServer()
+                .AddDbContext<APIContext>(options => options.UseSqlServer(connection));
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
