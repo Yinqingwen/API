@@ -23,7 +23,7 @@ namespace API.Controllers
         }
 
         // GET api/site/5
-        [HttpGet("{id}",, Name = "GetSite")]
+        [HttpGet("{id}", Name = "GetSite")]
         public IActionResult GetById(int id)
         {
             var item = siteitems.Find(id);
