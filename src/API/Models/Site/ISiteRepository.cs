@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace API.Models
 {
-    interface ISiteRepository
+    public interface ISiteRepository
     {
         /// <summary>
         /// 增加
