@@ -1,0 +1,20 @@
+﻿{
+  "name": "CityCode",
+  "type": "string",
+  "validation": [
+    {
+      "name": "Required",
+      "ErrorMessage": "城市代码字段不能为空！"
+    },
+    {
+      "name": "MaxLength",
+      "value": 6,
+      "ErrorMessage": "城市代码字段长度过大！"
+    },
+    {
+      "name": "Reg",
+      "value": "?d/d/d/",
+      "ErrorMessage": "城市代码字段正则校验未通过！"
+    }
+  ]
+}
