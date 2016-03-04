@@ -9,9 +9,20 @@ namespace API.Models
 {
     public class APIContext : DbContext
     {
+        /// <summary>
+        /// 城市数据表
+        /// </summary>
         public DbSet<City> Citys { get; set; }
 
+        /// <summary>
+        /// 站点数据表
+        /// </summary>
         public DbSet<Site> Sites { get; set; }
+
+        /// <summary>
+        /// 省份数据表
+        /// </summary>
+        public DbSet<Province> Provinces { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
