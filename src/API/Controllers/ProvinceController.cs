@@ -121,7 +121,7 @@ namespace API.Controllers
         /// 删除省份
         /// </summary>
         /// <param name="id">省份对象ID</param>
-        /// <returns>暂时未定</returns>
+        /// <returns>暂时未定刘振通是个大SB</returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
