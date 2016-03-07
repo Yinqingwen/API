@@ -44,6 +44,7 @@ namespace API
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
+            //services.AddSingleton<IProvinceRepository, ProvinceRepository>();
             services.AddSingleton<IProvinceRepository, ProvinceRepository>();
             services.AddSingleton<ICityRepository, CityRepository>();
             services.AddSingleton<ISiteRepository, SiteRepository>();
