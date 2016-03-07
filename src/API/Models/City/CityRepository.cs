@@ -17,6 +17,9 @@ namespace API.Models
 
         public void Add(City city)
         {
+            city.CreateDate = DateTime.Now;
+            city.LastUpdateDate = DateTime.Now;
+            city.InUse = true;
             apicontext.Citys.Add(city);
             apicontext.SaveChanges();
         }

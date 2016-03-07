@@ -44,10 +44,9 @@ namespace API
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
-            //services.AddSingleton<IProvinceRepository, ProvinceRepository>();
-            services.AddSingleton<IProvinceRepository, ProvinceRepository>();
             services.AddSingleton<ICityRepository, CityRepository>();
             services.AddSingleton<ISiteRepository, SiteRepository>();
+            services.AddSingleton<IProvinceRepository, ProvinceRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

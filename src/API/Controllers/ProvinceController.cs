@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using API.Models;
 using Microsoft.AspNet.Mvc;
-using API.Models;
-
-// For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+using System.Collections.Generic;
 
 namespace API.Controllers
 {
@@ -87,7 +82,7 @@ namespace API.Controllers
         /// <param name="newProvince">省份对象</param>
         /// <returns>添加完的省份对象</returns>
         [HttpPost]
-        public IActionResult Create([FromBody]Province newProvince)
+        public IActionResult Create([FromBody] Province newProvince)
         {
             if (newProvince == null)
                 return HttpBadRequest();

@@ -30,7 +30,7 @@ namespace API.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("{id}",Name = "GetCity")]
+        [HttpGet("{id}")]
         public IActionResult GetById(long id)
         {
             var item = Cityitems.Find(id);
@@ -50,7 +50,7 @@ namespace API.Controllers
             if (city == null)
                 return HttpBadRequest();
             Cityitems.Add(city);
-            return CreatedAtRoute("GetCity",new { Controller = "City", id = city.ID}, city);
+            return CreatedAtRoute("City",new { Controller = "City", id = city.ID}, city);
         }
 
         /// <summary>

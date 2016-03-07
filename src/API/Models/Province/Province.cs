@@ -17,7 +17,7 @@ namespace API.Models
         /// 省份编码
         /// </summary>
         [Required]
-        [MaxLength(6)]
+        [MaxLength(3)]
         public string ProvinceCode { get; set; }
 
         /// <summary>

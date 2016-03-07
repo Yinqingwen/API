@@ -17,6 +17,13 @@ namespace API.Models
         public long ID { get; set; }
 
         /// <summary>
+        /// 省份代码，国标为3位，按照国家统计局标准制定，http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/
+        /// </summary>
+        [Required]
+        [MaxLength(3)]
+        public string ProvinceCode { get; set; }
+
+        /// <summary>
         /// 城市代码，加站点编号为运单编号的前三位，字符类型
         /// </summary>
         [Required]
