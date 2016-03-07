@@ -1,5 +1,5 @@
-# API [![Build status](https://ci.appveyor.com/api/projects/status/yy0haisja1spn4sc?svg=true)](https://ci.appveyor.com/project/Yinqingwen/api)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/mncwf9xq94gq76cl?svg=true)](https://ci.appveyor.com/project/Yinqingwen/api)
+# API 
 物流信息管理系统-数据中间层（WEBAPI）
 
 物流信息管理系统的数据中间层，使用WEBAPI技术进行构建。
